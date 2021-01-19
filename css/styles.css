@@ -44,14 +44,21 @@ i{
 
 /* Title image */
 .title-image{
-    width: 60%;
+    
+    position: absolute;
+    width:20%;
     transform:rotate(22deg);
+    right:30%;
+   
 }
 
 /* features */
 #features{
     text-align: center;
     padding:7% 15%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
 }
 
 .flogo{
@@ -114,7 +121,50 @@ p{
     padding: 3% 2%;
 }
 
+/* CTA */
+#cta{
+    font-family: 'Montserrat', sans-serif;
+    background-color:#ff4c68 ;
+    color: white;
+    text-align: center;
+}
 
+.cta-foot{
+    font-weight: bold;
+  padding: 70px 10px;
+}
+.cta-button{
+    
+    margin: 5px;
+    margin-bottom: 50px;
+}
+
+#footer{
+    
+   /* background-color: white;*/
+    text-align: center;
+    height: 100px;
+}
+
+.icon-container{
+    padding: 20px;
+
+}
+
+
+
+
+
+@media (max-width:1028px){
+    .title-image{
+        position: static;
+        transform: rotate(0);
+        width: 60%;
+    }
+    #title{
+        text-align: center;
+    }
+}
 
 
 
